@@ -1,0 +1,71 @@
+\hypertarget{jobs_8c}{}\section{mydash-\/src/jobs.c File Reference}
+\label{jobs_8c}\index{mydash-\/src/jobs.\+c@{mydash-\/src/jobs.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$sys/wait.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}jobs.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{jobs_8h_ac1ff02d06e254a8ba10afa88883514b2}{job} \hyperlink{jobs_8c_a29fbbd9ecaa36f1330f5103c62413d37}{make\+Job} (int n, pid\+\_\+t id, char $\ast$chr)
+\item 
+void \hyperlink{jobs_8c_a0ec77e321d97963c548be9a0878f9ee5}{free\+All} (void $\ast$item)
+\item 
+int \hyperlink{jobs_8c_a0312ced04128db7b66e3dcd31bb40567}{is\+Equal} (const void $\ast$first, const void $\ast$second)
+\item 
+int \hyperlink{jobs_8c_a27958ede6991fd3f3e2f98830b9dbf4a}{is\+Done} (void $\ast$item)
+\item 
+void \hyperlink{jobs_8c_a3c098c18f6a304de6395b1ddc4b27483}{print} (void $\ast$item)
+\item 
+char $\ast$ \hyperlink{jobs_8c_ab51ab8781a0566fb4837c7e7cb95fd3e}{to\+String} (const void $\ast$item)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{jobs_8c_a0ec77e321d97963c548be9a0878f9ee5}{}\index{jobs.\+c@{jobs.\+c}!free\+All@{free\+All}}
+\index{free\+All@{free\+All}!jobs.\+c@{jobs.\+c}}
+\subsubsection[{free\+All}]{\setlength{\rightskip}{0pt plus 5cm}void free\+All (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\label{jobs_8c_a0ec77e321d97963c548be9a0878f9ee5}
+\hypertarget{jobs_8c_a27958ede6991fd3f3e2f98830b9dbf4a}{}\index{jobs.\+c@{jobs.\+c}!is\+Done@{is\+Done}}
+\index{is\+Done@{is\+Done}!jobs.\+c@{jobs.\+c}}
+\subsubsection[{is\+Done}]{\setlength{\rightskip}{0pt plus 5cm}int is\+Done (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\label{jobs_8c_a27958ede6991fd3f3e2f98830b9dbf4a}
+\hypertarget{jobs_8c_a0312ced04128db7b66e3dcd31bb40567}{}\index{jobs.\+c@{jobs.\+c}!is\+Equal@{is\+Equal}}
+\index{is\+Equal@{is\+Equal}!jobs.\+c@{jobs.\+c}}
+\subsubsection[{is\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}int is\+Equal (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{first, }
+\item[{const void $\ast$}]{second}
+\end{DoxyParamCaption}
+)}\label{jobs_8c_a0312ced04128db7b66e3dcd31bb40567}
+\hypertarget{jobs_8c_a29fbbd9ecaa36f1330f5103c62413d37}{}\index{jobs.\+c@{jobs.\+c}!make\+Job@{make\+Job}}
+\index{make\+Job@{make\+Job}!jobs.\+c@{jobs.\+c}}
+\subsubsection[{make\+Job}]{\setlength{\rightskip}{0pt plus 5cm}{\bf job} make\+Job (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{pid\+\_\+t}]{id, }
+\item[{char $\ast$}]{chr}
+\end{DoxyParamCaption}
+)}\label{jobs_8c_a29fbbd9ecaa36f1330f5103c62413d37}
+\hypertarget{jobs_8c_a3c098c18f6a304de6395b1ddc4b27483}{}\index{jobs.\+c@{jobs.\+c}!print@{print}}
+\index{print@{print}!jobs.\+c@{jobs.\+c}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void print (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\label{jobs_8c_a3c098c18f6a304de6395b1ddc4b27483}
+\hypertarget{jobs_8c_ab51ab8781a0566fb4837c7e7cb95fd3e}{}\index{jobs.\+c@{jobs.\+c}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!jobs.\+c@{jobs.\+c}}
+\subsubsection[{to\+String}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ to\+String (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\label{jobs_8c_ab51ab8781a0566fb4837c7e7cb95fd3e}

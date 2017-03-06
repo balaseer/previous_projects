@@ -1,0 +1,40 @@
+***************
+NEW Grade: 84.5
+***************
+Bugs that were fixed for this project
+-Compiling: FIXED 1 point back
+-change directory command (9 points): Fixed 4.5 points back
+-simple job control (10 points): FIXED 5 points back
+-Valgrind (10 points): Fixed 5 points back
+Total points lost: 31
+Total points back: 15.5
+
+
+Checkpoint Requirements:
+	-Submission quality: OK
+	-Build/Makefile:  OK
+	-Compiling:  -2 Warnings 
+	-handling empty commands (2 points):   OK
+	-handling EOF (2 points):  OK
+	-handling exit command (2 points): OK
+	-change directory command (9 points):  -9
+	-show version (5 points): OK
+
+Functional Requirements:
+	-filename completion and command history (5 points): OK
+	-normal command execution (10 points): OK
+	-prompt (5 points):  OK
+	-background jobs (5 points): OK
+	-job list / jobs command (15 points): OK
+	-simple job control (10 points): -10 not working
+
+Valgrind (10 points): -10 Invalid read of size 1 jobs command
+
+git source code control use (10 points):  OK
+
+Design & documentation (10 points):OK
+	-README file: OK
+	-Code organization & style: OK
+	-Test cases:  OK
+
+Grade:   69/100

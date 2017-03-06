@@ -1,0 +1,7 @@
+TESTS:
+*./mydash -v
+*exit
+*"empty command"
+*cd
+*jobs
+*(all exec-ed commands)

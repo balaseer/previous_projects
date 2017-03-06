@@ -1,0 +1,86 @@
+\hypertarget{jobs_8h}{}\section{mydash-\/src/jobs.h File Reference}
+\label{jobs_8h}\index{mydash-\/src/jobs.\+h@{mydash-\/src/jobs.\+h}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structjobs}{jobs}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structjobs}{jobs} \hyperlink{jobs_8h_ae811c8986ea130b8bb9b310a87457ec7}{jobs}
+\item 
+typedef struct \hyperlink{structjobs}{jobs} $\ast$ \hyperlink{jobs_8h_ac1ff02d06e254a8ba10afa88883514b2}{job}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{jobs_8h_ac1ff02d06e254a8ba10afa88883514b2}{job} \hyperlink{jobs_8h_af85b47e1822dfcb832ce76341e2cd951}{make\+Job} (int n, pid\+\_\+t pid, char $\ast$chr)
+\item 
+void \hyperlink{jobs_8h_a0ec77e321d97963c548be9a0878f9ee5}{free\+All} (void $\ast$item)
+\item 
+int \hyperlink{jobs_8h_a0312ced04128db7b66e3dcd31bb40567}{is\+Equal} (const void $\ast$first, const void $\ast$second)
+\item 
+int \hyperlink{jobs_8h_a27958ede6991fd3f3e2f98830b9dbf4a}{is\+Done} (void $\ast$item)
+\item 
+void \hyperlink{jobs_8h_a3c098c18f6a304de6395b1ddc4b27483}{print} (void $\ast$item)
+\item 
+char $\ast$ \hyperlink{jobs_8h_ab51ab8781a0566fb4837c7e7cb95fd3e}{to\+String} (const void $\ast$item)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{jobs_8h_ac1ff02d06e254a8ba10afa88883514b2}{}\index{jobs.\+h@{jobs.\+h}!job@{job}}
+\index{job@{job}!jobs.\+h@{jobs.\+h}}
+\subsubsection[{job}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf jobs}$\ast$ {\bf job}}\label{jobs_8h_ac1ff02d06e254a8ba10afa88883514b2}
+\hypertarget{jobs_8h_ae811c8986ea130b8bb9b310a87457ec7}{}\index{jobs.\+h@{jobs.\+h}!jobs@{jobs}}
+\index{jobs@{jobs}!jobs.\+h@{jobs.\+h}}
+\subsubsection[{jobs}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf jobs} {\bf jobs}}\label{jobs_8h_ae811c8986ea130b8bb9b310a87457ec7}
+
+
+\subsection{Function Documentation}
+\hypertarget{jobs_8h_a0ec77e321d97963c548be9a0878f9ee5}{}\index{jobs.\+h@{jobs.\+h}!free\+All@{free\+All}}
+\index{free\+All@{free\+All}!jobs.\+h@{jobs.\+h}}
+\subsubsection[{free\+All}]{\setlength{\rightskip}{0pt plus 5cm}void free\+All (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\label{jobs_8h_a0ec77e321d97963c548be9a0878f9ee5}
+\hypertarget{jobs_8h_a27958ede6991fd3f3e2f98830b9dbf4a}{}\index{jobs.\+h@{jobs.\+h}!is\+Done@{is\+Done}}
+\index{is\+Done@{is\+Done}!jobs.\+h@{jobs.\+h}}
+\subsubsection[{is\+Done}]{\setlength{\rightskip}{0pt plus 5cm}int is\+Done (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\label{jobs_8h_a27958ede6991fd3f3e2f98830b9dbf4a}
+\hypertarget{jobs_8h_a0312ced04128db7b66e3dcd31bb40567}{}\index{jobs.\+h@{jobs.\+h}!is\+Equal@{is\+Equal}}
+\index{is\+Equal@{is\+Equal}!jobs.\+h@{jobs.\+h}}
+\subsubsection[{is\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}int is\+Equal (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{first, }
+\item[{const void $\ast$}]{second}
+\end{DoxyParamCaption}
+)}\label{jobs_8h_a0312ced04128db7b66e3dcd31bb40567}
+\hypertarget{jobs_8h_af85b47e1822dfcb832ce76341e2cd951}{}\index{jobs.\+h@{jobs.\+h}!make\+Job@{make\+Job}}
+\index{make\+Job@{make\+Job}!jobs.\+h@{jobs.\+h}}
+\subsubsection[{make\+Job}]{\setlength{\rightskip}{0pt plus 5cm}{\bf job} make\+Job (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{pid\+\_\+t}]{pid, }
+\item[{char $\ast$}]{chr}
+\end{DoxyParamCaption}
+)}\label{jobs_8h_af85b47e1822dfcb832ce76341e2cd951}
+\hypertarget{jobs_8h_a3c098c18f6a304de6395b1ddc4b27483}{}\index{jobs.\+h@{jobs.\+h}!print@{print}}
+\index{print@{print}!jobs.\+h@{jobs.\+h}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void print (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\label{jobs_8h_a3c098c18f6a304de6395b1ddc4b27483}
+\hypertarget{jobs_8h_ab51ab8781a0566fb4837c7e7cb95fd3e}{}\index{jobs.\+h@{jobs.\+h}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!jobs.\+h@{jobs.\+h}}
+\subsubsection[{to\+String}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ to\+String (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{item}
+\end{DoxyParamCaption}
+)}\label{jobs_8h_ab51ab8781a0566fb4837c7e7cb95fd3e}
