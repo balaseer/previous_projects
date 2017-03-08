@@ -1,0 +1,173 @@
+\hypertarget{buddy__mem__manager_2buddy_8c}{}\section{buddy\+\_\+mem\+\_\+manager/buddy.c File Reference}
+\label{buddy__mem__manager_2buddy_8c}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}buddy.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structblock}{block}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{buddy__mem__manager_2buddy_8c_af218d6522bd0cecd74df71aca18a7893}{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}
+\item 
+\#define \hyperlink{buddy__mem__manager_2buddy_8c_a74799bfafd636c36aeaed4c045acb907}{H\+I\+G\+H\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}~35
+\item 
+\#define \hyperlink{buddy__mem__manager_2buddy_8c_ada63ed810b616bbac2aa6a145720a3df}{L\+O\+W\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}~5
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{buddy__mem__manager_2buddy_8c_ac760e60c430db059b441b92fc4df7a76}{split} (unsigned k)
+\item 
+unsigned \hyperlink{buddy__mem__manager_2buddy_8c_ace437012ee7b47ec3cda621f90fff0de}{get\+\_\+k} (size\+\_\+t size)
+\item 
+void $\ast$ \hyperlink{buddy__mem__manager_2buddy_8c_a7ac38fce3243a7dcf448301ee9ffd392}{malloc} (size\+\_\+t size)
+\item 
+void \hyperlink{buddy__mem__manager_2buddy_8c_afbedc913aa4651b3c3b4b3aecd9b4711}{free} (void $\ast$ptr)
+\item 
+void $\ast$ \hyperlink{buddy__mem__manager_2buddy_8c_a62b7798461bd461da64c5f9d35feddf7}{calloc} (size\+\_\+t nmemb, size\+\_\+t size)
+\item 
+void $\ast$ \hyperlink{buddy__mem__manager_2buddy_8c_a1a6b5e8d2f1c37e5b43e4345586075be}{realloc} (void $\ast$ptr, size\+\_\+t size)
+\item 
+void \hyperlink{buddy__mem__manager_2buddy_8c_a6ed1593775eeb819df9178b668ac88bf}{buddy\+\_\+init} (size\+\_\+t size)
+\item 
+void $\ast$ \hyperlink{buddy__mem__manager_2buddy_8c_acb1fb807820b9fbe1e6c7e6c65a7745c}{buddy\+\_\+calloc} (size\+\_\+t num, size\+\_\+t size)
+\item 
+void $\ast$ \hyperlink{buddy__mem__manager_2buddy_8c_a183a1669a60daf8038404f3c9bc18a57}{buddy\+\_\+malloc} (size\+\_\+t size)
+\item 
+void $\ast$ \hyperlink{buddy__mem__manager_2buddy_8c_ab59e427c914a67f0872310ec2e84d1b5}{buddy\+\_\+realloc} (void $\ast$ptr, size\+\_\+t size)
+\item 
+void \hyperlink{buddy__mem__manager_2buddy_8c_a2d38d5280dce5d4f0b85410e00c293a6}{buddy\+\_\+free} (void $\ast$ptr)
+\item 
+void \hyperlink{buddy__mem__manager_2buddy_8c_a5eaf773600a0002687be834fa8cf0f04}{print\+Buddy\+Lists} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{buddy__mem__manager_2buddy_8c_a6381f624a5f40caf03dd82cbaec1b8ce}{B\+A\+S\+E} = N\+U\+L\+L
+\item 
+static \hyperlink{structblock}{block} $\ast$ \hyperlink{buddy__mem__manager_2buddy_8c_a370a7525a3ea65be5d4498f333ed4b13}{A\+V\+A\+I\+L} \mbox{[}\hyperlink{buddy__mem__manager_2buddy_8c_a74799bfafd636c36aeaed4c045acb907}{H\+I\+G\+H\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}+1\mbox{]}
+\item 
+static unsigned \hyperlink{buddy__mem__manager_2buddy_8c_a610eae7876cc80877113d53851722291}{M\+A\+X}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{buddy__mem__manager_2buddy_8c_a74799bfafd636c36aeaed4c045acb907}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!H\+I\+G\+H\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T@{H\+I\+G\+H\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}}
+\index{H\+I\+G\+H\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T@{H\+I\+G\+H\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{H\+I\+G\+H\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+I\+G\+H\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T~35}\label{buddy__mem__manager_2buddy_8c_a74799bfafd636c36aeaed4c045acb907}
+\hypertarget{buddy__mem__manager_2buddy_8c_ada63ed810b616bbac2aa6a145720a3df}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!L\+O\+W\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T@{L\+O\+W\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}}
+\index{L\+O\+W\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T@{L\+O\+W\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{L\+O\+W\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+W\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T~5}\label{buddy__mem__manager_2buddy_8c_ada63ed810b616bbac2aa6a145720a3df}
+\hypertarget{buddy__mem__manager_2buddy_8c_af218d6522bd0cecd74df71aca18a7893}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}}
+\index{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}\label{buddy__mem__manager_2buddy_8c_af218d6522bd0cecd74df71aca18a7893}
+
+
+\subsection{Function Documentation}
+\hypertarget{buddy__mem__manager_2buddy_8c_acb1fb807820b9fbe1e6c7e6c65a7745c}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!buddy\+\_\+calloc@{buddy\+\_\+calloc}}
+\index{buddy\+\_\+calloc@{buddy\+\_\+calloc}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{buddy\+\_\+calloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ buddy\+\_\+calloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_acb1fb807820b9fbe1e6c7e6c65a7745c}
+\hypertarget{buddy__mem__manager_2buddy_8c_a2d38d5280dce5d4f0b85410e00c293a6}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!buddy\+\_\+free@{buddy\+\_\+free}}
+\index{buddy\+\_\+free@{buddy\+\_\+free}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{buddy\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}void buddy\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_a2d38d5280dce5d4f0b85410e00c293a6}
+\hypertarget{buddy__mem__manager_2buddy_8c_a6ed1593775eeb819df9178b668ac88bf}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!buddy\+\_\+init@{buddy\+\_\+init}}
+\index{buddy\+\_\+init@{buddy\+\_\+init}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{buddy\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void buddy\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_a6ed1593775eeb819df9178b668ac88bf}
+\hypertarget{buddy__mem__manager_2buddy_8c_a183a1669a60daf8038404f3c9bc18a57}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!buddy\+\_\+malloc@{buddy\+\_\+malloc}}
+\index{buddy\+\_\+malloc@{buddy\+\_\+malloc}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{buddy\+\_\+malloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ buddy\+\_\+malloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_a183a1669a60daf8038404f3c9bc18a57}
+\hypertarget{buddy__mem__manager_2buddy_8c_ab59e427c914a67f0872310ec2e84d1b5}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!buddy\+\_\+realloc@{buddy\+\_\+realloc}}
+\index{buddy\+\_\+realloc@{buddy\+\_\+realloc}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{buddy\+\_\+realloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ buddy\+\_\+realloc (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_ab59e427c914a67f0872310ec2e84d1b5}
+\hypertarget{buddy__mem__manager_2buddy_8c_a62b7798461bd461da64c5f9d35feddf7}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!calloc@{calloc}}
+\index{calloc@{calloc}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{calloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ calloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{nmemb, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_a62b7798461bd461da64c5f9d35feddf7}
+\hypertarget{buddy__mem__manager_2buddy_8c_afbedc913aa4651b3c3b4b3aecd9b4711}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!free@{free}}
+\index{free@{free}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{free}]{\setlength{\rightskip}{0pt plus 5cm}void free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_afbedc913aa4651b3c3b4b3aecd9b4711}
+\hypertarget{buddy__mem__manager_2buddy_8c_ace437012ee7b47ec3cda621f90fff0de}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!get\+\_\+k@{get\+\_\+k}}
+\index{get\+\_\+k@{get\+\_\+k}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{get\+\_\+k}]{\setlength{\rightskip}{0pt plus 5cm}unsigned get\+\_\+k (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_ace437012ee7b47ec3cda621f90fff0de}
+\hypertarget{buddy__mem__manager_2buddy_8c_a7ac38fce3243a7dcf448301ee9ffd392}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!malloc@{malloc}}
+\index{malloc@{malloc}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{malloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ malloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_a7ac38fce3243a7dcf448301ee9ffd392}
+\hypertarget{buddy__mem__manager_2buddy_8c_a5eaf773600a0002687be834fa8cf0f04}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!print\+Buddy\+Lists@{print\+Buddy\+Lists}}
+\index{print\+Buddy\+Lists@{print\+Buddy\+Lists}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{print\+Buddy\+Lists}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Buddy\+Lists (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_a5eaf773600a0002687be834fa8cf0f04}
+\hypertarget{buddy__mem__manager_2buddy_8c_a1a6b5e8d2f1c37e5b43e4345586075be}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!realloc@{realloc}}
+\index{realloc@{realloc}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{realloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ realloc (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_a1a6b5e8d2f1c37e5b43e4345586075be}
+\hypertarget{buddy__mem__manager_2buddy_8c_ac760e60c430db059b441b92fc4df7a76}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!split@{split}}
+\index{split@{split}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{split}]{\setlength{\rightskip}{0pt plus 5cm}void split (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{k}
+\end{DoxyParamCaption}
+)}\label{buddy__mem__manager_2buddy_8c_ac760e60c430db059b441b92fc4df7a76}
+
+
+\subsection{Variable Documentation}
+\hypertarget{buddy__mem__manager_2buddy_8c_a370a7525a3ea65be5d4498f333ed4b13}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!A\+V\+A\+I\+L@{A\+V\+A\+I\+L}}
+\index{A\+V\+A\+I\+L@{A\+V\+A\+I\+L}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{A\+V\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf block}$\ast$ A\+V\+A\+I\+L\mbox{[}{\bf H\+I\+G\+H\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T}+1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\label{buddy__mem__manager_2buddy_8c_a370a7525a3ea65be5d4498f333ed4b13}
+\hypertarget{buddy__mem__manager_2buddy_8c_a6381f624a5f40caf03dd82cbaec1b8ce}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!B\+A\+S\+E@{B\+A\+S\+E}}
+\index{B\+A\+S\+E@{B\+A\+S\+E}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{B\+A\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ B\+A\+S\+E = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}}\label{buddy__mem__manager_2buddy_8c_a6381f624a5f40caf03dd82cbaec1b8ce}
+\hypertarget{buddy__mem__manager_2buddy_8c_a610eae7876cc80877113d53851722291}{}\index{buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}!M\+A\+X@{M\+A\+X}}
+\index{M\+A\+X@{M\+A\+X}!buddy\+\_\+mem\+\_\+manager/buddy.\+c@{buddy\+\_\+mem\+\_\+manager/buddy.\+c}}
+\subsubsection[{M\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}unsigned M\+A\+X\hspace{0.3cm}{\ttfamily [static]}}\label{buddy__mem__manager_2buddy_8c_a610eae7876cc80877113d53851722291}

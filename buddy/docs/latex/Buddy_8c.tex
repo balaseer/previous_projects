@@ -1,0 +1,179 @@
+\hypertarget{buddy_8c}{}\section{buddy-\/src/buddy.c File Reference}
+\label{buddy_8c}\index{buddy-\/src/buddy.\+c@{buddy-\/src/buddy.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}buddy.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structblock}{block}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{buddy_8c_af218d6522bd0cecd74df71aca18a7893}{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}
+\item 
+\#define \hyperlink{buddy_8c_a2919c0c0195dfec89c782d95e49e7fe1}{H\+I\+G\+H\+\_\+\+E\+X\+P}~35
+\item 
+\#define \hyperlink{buddy_8c_ae900aa5a0a4ffcb19e0414d53caad51b}{L\+O\+W\+\_\+\+E\+X\+P}~5
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{buddy_8c_a28b9a4c4420f811709173caf6d904ea0}{calloc} (size\+\_\+t, size\+\_\+t)
+\item 
+void $\ast$ \hyperlink{buddy_8c_a52abbdf8792edbd1e34d4ca8d061f840}{malloc} (size\+\_\+t)
+\item 
+void $\ast$ \hyperlink{buddy_8c_acb2ed6e8ca82d5764b9bc87b506b4f3c}{realloc} (void $\ast$ptr, size\+\_\+t)
+\item 
+void \hyperlink{buddy_8c_afbedc913aa4651b3c3b4b3aecd9b4711}{free} (void $\ast$ptr)
+\item 
+void \hyperlink{buddy_8c_aae03d1abb758f31e97a757ec10b2373c}{split} (unsigned)
+\item 
+unsigned \hyperlink{buddy_8c_ac1c970e2658977c92b4104d6f3bbdd5f}{get\+\_\+k} (size\+\_\+t)
+\item 
+void \hyperlink{buddy_8c_aed7f2c6c090d69bbd59ebc96879f53d1}{buddy\+\_\+init} (size\+\_\+t init\+Bytes)
+\item 
+void $\ast$ \hyperlink{buddy_8c_acb1fb807820b9fbe1e6c7e6c65a7745c}{buddy\+\_\+calloc} (size\+\_\+t num, size\+\_\+t size)
+\item 
+void $\ast$ \hyperlink{buddy_8c_a1ba811d1d106baadad5c1e9ddabc04ec}{buddy\+\_\+malloc} (size\+\_\+t mem\+\_\+req)
+\item 
+void $\ast$ \hyperlink{buddy_8c_a48365d46392189602b0907d7bffb9ca2}{buddy\+\_\+realloc} (void $\ast$reall, size\+\_\+t size)
+\item 
+void \hyperlink{buddy_8c_ac3be1c3cb995815767f80f0625e24026}{buddy\+\_\+free} (void $\ast$free\+\_\+me)
+\item 
+void \hyperlink{buddy_8c_a5eaf773600a0002687be834fa8cf0f04}{print\+Buddy\+Lists} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{buddy_8c_a6381f624a5f40caf03dd82cbaec1b8ce}{B\+A\+S\+E} = N\+U\+L\+L
+\item 
+static \hyperlink{structblock}{block} $\ast$ \hyperlink{buddy_8c_aadd4ce5ae1d56c5b7b8b66c9acc68692}{A\+V\+A\+I\+L} \mbox{[}\hyperlink{buddy_8c_a2919c0c0195dfec89c782d95e49e7fe1}{H\+I\+G\+H\+\_\+\+E\+X\+P}+1\mbox{]}
+\item 
+static unsigned \hyperlink{buddy_8c_a610eae7876cc80877113d53851722291}{M\+A\+X}
+\item 
+pthread\+\_\+mutex\+\_\+t \hyperlink{buddy_8c_a4acff8232e4aec9cd5c6dc200ac55ef3}{mutex} = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+E\+R
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{buddy_8c_a2919c0c0195dfec89c782d95e49e7fe1}{}\index{buddy.\+c@{buddy.\+c}!H\+I\+G\+H\+\_\+\+E\+X\+P@{H\+I\+G\+H\+\_\+\+E\+X\+P}}
+\index{H\+I\+G\+H\+\_\+\+E\+X\+P@{H\+I\+G\+H\+\_\+\+E\+X\+P}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{H\+I\+G\+H\+\_\+\+E\+X\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+I\+G\+H\+\_\+\+E\+X\+P~35}\label{buddy_8c_a2919c0c0195dfec89c782d95e49e7fe1}
+\hypertarget{buddy_8c_ae900aa5a0a4ffcb19e0414d53caad51b}{}\index{buddy.\+c@{buddy.\+c}!L\+O\+W\+\_\+\+E\+X\+P@{L\+O\+W\+\_\+\+E\+X\+P}}
+\index{L\+O\+W\+\_\+\+E\+X\+P@{L\+O\+W\+\_\+\+E\+X\+P}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{L\+O\+W\+\_\+\+E\+X\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+W\+\_\+\+E\+X\+P~5}\label{buddy_8c_ae900aa5a0a4ffcb19e0414d53caad51b}
+\hypertarget{buddy_8c_af218d6522bd0cecd74df71aca18a7893}{}\index{buddy.\+c@{buddy.\+c}!M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}}
+\index{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+M\+E\+M\+\_\+\+S\+I\+Z\+E}\label{buddy_8c_af218d6522bd0cecd74df71aca18a7893}
+
+
+\subsection{Function Documentation}
+\hypertarget{buddy_8c_acb1fb807820b9fbe1e6c7e6c65a7745c}{}\index{buddy.\+c@{buddy.\+c}!buddy\+\_\+calloc@{buddy\+\_\+calloc}}
+\index{buddy\+\_\+calloc@{buddy\+\_\+calloc}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{buddy\+\_\+calloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ buddy\+\_\+calloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_acb1fb807820b9fbe1e6c7e6c65a7745c}
+\hypertarget{buddy_8c_ac3be1c3cb995815767f80f0625e24026}{}\index{buddy.\+c@{buddy.\+c}!buddy\+\_\+free@{buddy\+\_\+free}}
+\index{buddy\+\_\+free@{buddy\+\_\+free}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{buddy\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}void buddy\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{free\+\_\+me}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_ac3be1c3cb995815767f80f0625e24026}
+\hypertarget{buddy_8c_aed7f2c6c090d69bbd59ebc96879f53d1}{}\index{buddy.\+c@{buddy.\+c}!buddy\+\_\+init@{buddy\+\_\+init}}
+\index{buddy\+\_\+init@{buddy\+\_\+init}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{buddy\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void buddy\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{init\+Bytes}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_aed7f2c6c090d69bbd59ebc96879f53d1}
+\hypertarget{buddy_8c_a1ba811d1d106baadad5c1e9ddabc04ec}{}\index{buddy.\+c@{buddy.\+c}!buddy\+\_\+malloc@{buddy\+\_\+malloc}}
+\index{buddy\+\_\+malloc@{buddy\+\_\+malloc}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{buddy\+\_\+malloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ buddy\+\_\+malloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{mem\+\_\+req}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_a1ba811d1d106baadad5c1e9ddabc04ec}
+\hypertarget{buddy_8c_a48365d46392189602b0907d7bffb9ca2}{}\index{buddy.\+c@{buddy.\+c}!buddy\+\_\+realloc@{buddy\+\_\+realloc}}
+\index{buddy\+\_\+realloc@{buddy\+\_\+realloc}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{buddy\+\_\+realloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ buddy\+\_\+realloc (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{reall, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_a48365d46392189602b0907d7bffb9ca2}
+\hypertarget{buddy_8c_a28b9a4c4420f811709173caf6d904ea0}{}\index{buddy.\+c@{buddy.\+c}!calloc@{calloc}}
+\index{calloc@{calloc}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{calloc}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ calloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_a28b9a4c4420f811709173caf6d904ea0}
+\hypertarget{buddy_8c_afbedc913aa4651b3c3b4b3aecd9b4711}{}\index{buddy.\+c@{buddy.\+c}!free@{free}}
+\index{free@{free}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{free}]{\setlength{\rightskip}{0pt plus 5cm}void free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_afbedc913aa4651b3c3b4b3aecd9b4711}
+\hypertarget{buddy_8c_ac1c970e2658977c92b4104d6f3bbdd5f}{}\index{buddy.\+c@{buddy.\+c}!get\+\_\+k@{get\+\_\+k}}
+\index{get\+\_\+k@{get\+\_\+k}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{get\+\_\+k}]{\setlength{\rightskip}{0pt plus 5cm}unsigned get\+\_\+k (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_ac1c970e2658977c92b4104d6f3bbdd5f}
+\hypertarget{buddy_8c_a52abbdf8792edbd1e34d4ca8d061f840}{}\index{buddy.\+c@{buddy.\+c}!malloc@{malloc}}
+\index{malloc@{malloc}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{malloc}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ malloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{mem\+\_\+req}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_a52abbdf8792edbd1e34d4ca8d061f840}
+\hypertarget{buddy_8c_a5eaf773600a0002687be834fa8cf0f04}{}\index{buddy.\+c@{buddy.\+c}!print\+Buddy\+Lists@{print\+Buddy\+Lists}}
+\index{print\+Buddy\+Lists@{print\+Buddy\+Lists}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{print\+Buddy\+Lists}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Buddy\+Lists (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_a5eaf773600a0002687be834fa8cf0f04}
+\hypertarget{buddy_8c_acb2ed6e8ca82d5764b9bc87b506b4f3c}{}\index{buddy.\+c@{buddy.\+c}!realloc@{realloc}}
+\index{realloc@{realloc}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{realloc}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ realloc (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_acb2ed6e8ca82d5764b9bc87b506b4f3c}
+\hypertarget{buddy_8c_aae03d1abb758f31e97a757ec10b2373c}{}\index{buddy.\+c@{buddy.\+c}!split@{split}}
+\index{split@{split}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{split}]{\setlength{\rightskip}{0pt plus 5cm}void split (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{k}
+\end{DoxyParamCaption}
+)}\label{buddy_8c_aae03d1abb758f31e97a757ec10b2373c}
+
+
+\subsection{Variable Documentation}
+\hypertarget{buddy_8c_aadd4ce5ae1d56c5b7b8b66c9acc68692}{}\index{buddy.\+c@{buddy.\+c}!A\+V\+A\+I\+L@{A\+V\+A\+I\+L}}
+\index{A\+V\+A\+I\+L@{A\+V\+A\+I\+L}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{A\+V\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf block}$\ast$ A\+V\+A\+I\+L\mbox{[}{\bf H\+I\+G\+H\+\_\+\+E\+X\+P}+1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\label{buddy_8c_aadd4ce5ae1d56c5b7b8b66c9acc68692}
+\hypertarget{buddy_8c_a6381f624a5f40caf03dd82cbaec1b8ce}{}\index{buddy.\+c@{buddy.\+c}!B\+A\+S\+E@{B\+A\+S\+E}}
+\index{B\+A\+S\+E@{B\+A\+S\+E}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{B\+A\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ B\+A\+S\+E = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}}\label{buddy_8c_a6381f624a5f40caf03dd82cbaec1b8ce}
+\hypertarget{buddy_8c_a610eae7876cc80877113d53851722291}{}\index{buddy.\+c@{buddy.\+c}!M\+A\+X@{M\+A\+X}}
+\index{M\+A\+X@{M\+A\+X}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{M\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}unsigned M\+A\+X\hspace{0.3cm}{\ttfamily [static]}}\label{buddy_8c_a610eae7876cc80877113d53851722291}
+\hypertarget{buddy_8c_a4acff8232e4aec9cd5c6dc200ac55ef3}{}\index{buddy.\+c@{buddy.\+c}!mutex@{mutex}}
+\index{mutex@{mutex}!buddy.\+c@{buddy.\+c}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+mutex\+\_\+t mutex = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+E\+R}\label{buddy_8c_a4acff8232e4aec9cd5c6dc200ac55ef3}
