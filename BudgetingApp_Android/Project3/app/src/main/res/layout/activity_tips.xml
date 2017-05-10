@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs402.project3.TipsActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="561dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/tipsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="106dp"
+            android:text="Average Tips Per Day?"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="42dp" />
+
+        <EditText
+            android:id="@+id/tipsPerDay"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_alignBaseline="@+id/tipsTextView"
+            android:layout_alignBottom="@+id/tipsTextView"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/tipsDaysPerWeek"
+            android:layout_toRightOf="@+id/tipsDaysPerWeek"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/tipsDaysPerWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tipsTextView"
+            android:layout_alignStart="@+id/tipsTextView"
+            android:layout_below="@+id/tipsPerDay"
+            android:layout_marginTop="83dp"
+            android:text="Average Work Days Per Week?"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="107dp" />
+
+        <EditText
+            android:id="@+id/tipsWorkDays"
+            android:layout_width="144dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="218dp"
+            tools:layout_editor_absoluteY="81dp"
+            android:layout_alignBottom="@+id/tipsDaysPerWeek"
+            android:layout_alignLeft="@+id/tipsPerDay"
+            android:layout_alignStart="@+id/tipsPerDay"
+            android:layout_alignRight="@+id/tipsPerDay"
+            android:layout_alignEnd="@+id/tipsPerDay" />
+
+        <Button
+            android:id="@+id/finishTipsButton"
+            android:layout_width="114dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/tipsDaysPerWeek"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="147dp"
+            android:text="finish"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="344dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

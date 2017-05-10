@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs402.project3.HourlyActivity">
+
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="577dp"
+        android:layout_marginBottom="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-4dp">
+
+    <TextView
+        android:id="@+id/hourlyPayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What Is Your Hourly Wage?"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="42dp"
+        android:layout_alignBottom="@+id/hourlyEditText"
+        android:layout_toLeftOf="@+id/hourlyEditText"
+        android:layout_toStartOf="@+id/hourlyEditText"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <EditText
+        android:id="@+id/hourlyEditText"
+        android:layout_width="168dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="25dp"
+        android:layout_marginTop="99dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/hourPerWeek"
+        android:layout_alignEnd="@+id/hourPerWeek" />
+
+    <TextView
+        android:id="@+id/numHoursTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Many Hours Do You Work A Week?"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="114dp"
+        android:layout_alignBottom="@+id/hourPerWeek"
+        android:layout_toLeftOf="@+id/hourPerWeek"
+        android:layout_toStartOf="@+id/hourPerWeek"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <EditText
+        android:id="@+id/hourPerWeek"
+        android:layout_width="103dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="84dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/hourlyEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/overTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number Of Over-Time Hours?"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="174dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/hourlyEditText"
+        android:layout_toStartOf="@+id/hourlyEditText" />
+
+    <EditText
+        android:id="@+id/numOTHours"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="149dp"
+        android:layout_alignBottom="@+id/overTimeTextView"
+        android:layout_alignRight="@+id/hourPerWeek"
+        android:layout_alignEnd="@+id/hourPerWeek" />
+
+    <Button
+        android:id="@+id/finishHourlyButton"
+        android:layout_width="114dp"
+        android:layout_height="75dp"
+        android:text="finish"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="347dp"
+        android:layout_below="@+id/overTimeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

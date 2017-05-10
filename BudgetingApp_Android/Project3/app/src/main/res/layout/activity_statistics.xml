@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs402.project3.StatisticsActivity">
+
+
+
+    <!--<com.jjoe64.graphview.GraphView-->
+        <!--android:layout_width="350dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:id="@+id/graph"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--tools:layout_editor_absoluteY="50dp"-->
+        <!--tools:layout_editor_absoluteX="17dp" />-->
+
+    <RelativeLayout
+        android:layout_width="423dp"
+        android:layout_height="662dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="368dp"
+            android:layout_height="300dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/totalBillsStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/moneyLeftOverStatistics"
+            android:layout_alignRight="@+id/moneyLeftOverStatistics"
+            android:layout_below="@+id/bar_chart"
+            android:layout_marginTop="35dp"
+            android:text="Total Amount of Bills:" />
+
+        <TextView
+            android:id="@+id/moneyLeftOverStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/totalBillsStatistics"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21dp"
+            android:text="The Amount of Money You Have Left:" />
+
+        <Button
+            android:id="@+id/backToHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="47dp"
+            android:text="OK"
+            android:layout_below="@+id/moneyLeftOverStatistics"
+            android:layout_alignRight="@+id/moneyLeftOverStatistics"
+            android:layout_alignEnd="@+id/moneyLeftOverStatistics" />
+
+        <TextView
+            android:id="@+id/totalBillsAmountForUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/totalBillsStatistics"
+            android:layout_alignBottom="@+id/totalBillsStatistics"
+            android:layout_alignEnd="@+id/bar_chart"
+            android:layout_alignRight="@+id/bar_chart"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp" />
+
+        <TextView
+            android:id="@+id/moneyLeftForUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/potentialSavings"
+            android:layout_alignEnd="@+id/totalBillsAmountForUser"
+            android:layout_alignRight="@+id/totalBillsAmountForUser"
+            android:layout_alignTop="@+id/moneyLeftOverStatistics" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
