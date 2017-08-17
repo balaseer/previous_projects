@@ -1,0 +1,1 @@
+SELECT * FROM User as u, Followers as f WHERE u.id = f.followee group by u.id HAVING count(f.followee) > 1000;

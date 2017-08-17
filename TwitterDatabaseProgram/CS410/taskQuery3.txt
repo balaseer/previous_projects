@@ -1,0 +1,1 @@
+SELECT u.username, t.tweet FROM User as u, Tweets as t WHERE u.id = t.userid and t.tweet LIKE '%

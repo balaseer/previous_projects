@@ -1,0 +1,310 @@
+2 @1013KDWB Nampa 4 2 
+4 @14ParamorePH Los Angeles 1 4 
+5 @19ester Boise 1 5 
+7 @8bitszombiee Los Angeles 1 7 
+8 @ARTTM Los Angeles 1 8 
+10 @AWWNeverSorry: Los Angeles 1 10 
+15 @2020_istanbul Boise 1 15 
+19 @ASpookyGhost_24 Los Angeles 1 19 
+27 @AdamsLisa: Nampa 2 27 
+32 @3Dconnexion: Nampa 2 32 
+34 @3dsJamiesJewels Boise 2 34 
+39 @ACAD_RickGraham Boise 2 39 
+42 @BowmanCG Los Angeles 4 42 
+43 @BreatheBrasil Boise 10 43 
+44 @BreatheForPmore Los Angeles 2 44 
+45 @BreatheForPmore: Nampa 4 45 
+50 @87th Boise 4 50 
+51 @AkronJAY Los Angeles 4 51 
+57 @ConexaoSP_BR Boise 4 57 
+59 @CynicalCyanide St. Louis, MO 10 59 
+71 @BlueB15 Nampa 2 71 
+78 @Budo Los Angeles 7 78 
+80 @Audiotist Los Angeles 4 80 
+81 @BNRzaken Boise 4 81 
+83 @BWiesberger. Boise 25 83 
+84 @50cent. Los Angeles 25 84 
+88 @BenLiebrand: Nampa 4 88 
+89 @Benjamin_Herman, Boise 3 89 
+91 @FansBrParamore Nampa 19 91 
+93 @FcoFKNElektra Boise 11 93 
+99 @BobMaron Boise 2 99 
+134 @187KillerCali Los Angeles 2 134 
+137 @311dvm Los Angeles 4 137 
+138 @317lindquist: Nampa 2 138 
+147 @1057thePoint Nampa 2 147 
+158 @91a Boise 3 158 
+188 @BBCNews Los Angeles 2 188 
+205 @DocGirlfriend, Los Angeles 49 205 
+211 @ArcticEmpire: Boise 2 211 
+213 @Aamupojat Nampa 4 213 
+214 @AnttiHacklin: Nampa 204 214 
+220 @AndrewHaydSmith Nampa 2 220 
+221 @AndyAkin82 Nampa 19 221 
+223 @ArticulatePanda Nampa 14 223 
+248 @Chrisgrismer Boise 228 248 
+253 @EricIGN: Nampa 2 253 
+280 @#$ Nampa 18 280 
+291 @BoingBoing Boise 2 291 
+292 @BoraZ Boise 2 292 
+298 @Brooklyn Los Angeles 2 298 
+299 @15cwine Boise 2 299 
+301 @BloombergGov Nampa 2 301 
+308 @CameronNeylon Nampa 2 308 
+310 @BdyDrpdKotaEC Los Angeles 2 310 
+317 @ChrisRyanPhD Boise 2 317 
+322 @CoryBooker Boise 2 322 
+323 @DNLee5 Nampa 2 323 
+327 @AllPlanets Boise 2 327 
+330 @Astro_yyz Los Angeles 2 330 
+331 @BBC_Space: Los Angeles 2 331 
+335 @DeepChallenge) Los Angeles 12 335 
+339 @Dodgers Nampa 4 339 
+349 @Dr_Bik Boise 20 349 
+352 @EnsignPaul: Boise 58 352 
+354 @EricaRHill Boise 8 354 
+357 @BradleyAlumni Nampa 14 357 
+370 @ACAD_Teacher Nampa 52 370 
+373 @ADSKCommunity Los Angeles 4 373 
+374 @ADSKCommunity: Boise 4 374 
+378 @ASimoes7: Los Angeles 4 378 
+383 @A_KarrisEVE Nampa 10 383 
+385 @AngelaDeFinis: Boise 4 385 
+400 @30icons: Boise 39 400 
+403 @A4VGaming Los Angeles 7 403 
+407 @Apathy_Cs Boise 20 407 
+408 @As_We_Sleep Boise 20 408 
+409 @AsiaN_1e Los Angeles 7 409 
+418 @Appremium Boise 10 418 
+419 @BeingCivil: Boise 30 419 
+431 @Bwandon_OBJ Boise 5 431 
+454 @CadFileRefiner Los Angeles 370 454 
+459 @CarlBass Boise 4 459 
+480 @BrianPuspos: Los Angeles 14 480 
+485 @BloggingABDC Boise 40 485 
+489 @CanPOREOTICS Los Angeles 14 489 
+492 @ElrondBurrell Nampa 4 492 
+502 @CityYear Los Angeles 8 502 
+503 @DefenseGov: Los Angeles 40 503 
+511 @Aesth3tic_Karma Los Angeles 21 511 
+515 @ATVIAssist. Boise 40 515 
+519 @AllDaysPass Boise 20 519 
+529 @DigitalNoob_com Nampa 20 529 
+531 @Awfy: Nampa 30 531 
+533 @CraigReville Nampa 20 533 
+548 @1 Los Angeles 20 548 
+550 @ConfinedPC Los Angeles 19 550 
+554 @KahunaPirate Boise 19 554 
+572 @#$s Los Angeles 20 572 
+577 @HollisterCo Los Angeles 20 577 
+701 @AshleeBarrera Los Angeles 21 701 
+703 @BJam_NOHO Los Angeles 18 703 
+721 @DangerPenguin Los Angeles 4 721 
+750 @1ChicaDice: Los Angeles 4 750 
+759 @8bitweapon: Boise 4 759 
+800 @Ausserkraft Boise 10 800 
+810 @HilaryHRhoda Nampa 49 810 
+818 @Ajuda Los Angeles 27 818 
+821 @CONX... Los Angeles 11 821 
+828 @FergusHanson: Boise 189 828 
+832 @Eloqua: Nampa 15 832 
+847 @3FM Los Angeles 27 847 
+857 @ANNESOxsp Boise 95 857 
+875 @BobBalaban Los Angeles 9 875 
+885 @CourtClydesdale Los Angeles 13 885 
+891 @DoctorDoug: Boise 4 891 
+901 @DJ_BassD Nampa 4 901 
+920 @Jason23Nash Los Angeles 4 920 
+957 @AnimeBoston. Nampa 120 957 
+972 @EighthDoctor Boise 395 972 
+979 @Jay2KWinger Los Angeles 58 979 
+980 @EChuckinCharge Nampa 173 980 
+983 @#%ing Nampa 129 983 
+987 @Astro_Ron: Boise 4 987 
+998 @Brett: Boise 4 998 
+1005 @CheifKeef Boise 134 1005 
+1014 @ANI_news: Los Angeles 4 1014 
+1037 @AFTunion Los Angeles 4 1037 
+1042 @AP's Los Angeles 3 1042 
+1205 @94mim Los Angeles 301 1205 
+1247 @JustAneesha Los Angeles 10 1247 
+1250 @Krystalle: Nampa 7 1250 
+1274 @AbbottBradley Los Angeles 19 1274 
+1284 @IamBuckness Nampa 19 1284 
+1291 @Mr_Professor Los Angeles 217 1291 
+1292 @10_9 Los Angeles 28 1292 
+1298 @Ari_Zucker Los Angeles 74 1298 
+1322 @42floors Los Angeles 10 1322 
+1343 @Brandamentalist: Los Angeles 4 1343 
+1357 @BirthdayPartyyy: Boise 4 1357 
+1478 @10_AMac Nampa 4 1478 
+1503 @19_Costa Nampa 4 1503 
+1525 @1AngelLTL: Los Angeles 4 1525 
+1548 @AllenCameronCH Boise 19 1548 
+1574 @Amy__Wolpa Boise 14 1574 
+1759 @DChernyshenko: Boise 4 1759 
+1793 @2SMART4EVERY1 Nampa 20 1793 
+1834 @AbbyKerr: Boise 13 1834 
+1837 @AdamKingStudio Nampa 7 1837 
+1852 @BertTheBigHurt Los Angeles 8 1852 
+1858 @BrandonBeck: Nampa 42 1858 
+1880 @AndySwift: Nampa 7 1880 
+1881 @Barbielk Nampa 7 1881 
+1941 @Drakmarth Los Angeles 14 1941 
+1959 @EverettGresham Los Angeles 4 1959 
+1971 @CaroChibau: Boise 10 1971 
+1988 @GeekGirlCon. Los Angeles 10 1988 
+2042 @Drusticeleague Nampa 14 2042 
+2045 @FairladyMedia: Boise 20 2045 
+2055 @GrouchoDuke Nampa 4 2055 
+2071 @Justinbieber's Los Angeles 20 2071 
+2138 @DaemZero Boise 102 2138 
+2141 @GamingShogun Los Angeles 20 2141 
+2153 @Mrluga Nampa 28 2153 
+2177 @Crash1 Nampa 28 2177 
+2179 @CyTheWriter Boise 28 2179 
+2185 @BobbyOnMKEcom Los Angeles 37 2185 
+2188 @BtotheD Boise 211 2188 
+2194 @Frawlz Nampa 20 2194 
+2244 @Necr0mantic Boise 44 2244 
+2288 @DJDannyHoward Los Angeles 1112 2288 
+2342 @JackNorrisRD Los Angeles 48 2342 
+2347 @AnimeConsTV: Nampa 14 2347 
+2350 @Arisia Boise 528 2350 
+2353 @ChibiProject: Los Angeles 20 2353 
+2417 @AceMoms: Boise 20 2417 
+2450 @CollegeGameDay Nampa 22 2450 
+2515 @KristinCav: Los Angeles 4 2515 
+2753 @BabyTrixie Los Angeles 370 2753 
+2994 @AlYankovic Nampa 20 2994 
+3158 @HBO. Boise 19 3158 
+3188 @AaronMarshall Nampa 71 3188 
+3197 @BEEP Los Angeles 71 3197 
+3298 @Astro_Luca Boise 20 3298 
+3343 @DLR_en: Greenville, NC 21 3343 
+3374 @ESA_fr Boise 323 3374 
+3393 @HAL9000_: Los Angeles 211 3393 
+3419 @GatorOakley Nampa 173 3419 
+3443 @ANHQDC Boise 418 3443 
+3447 @Beyonce Nampa 273 3447 
+3549 @TheSunToday Nampa 173 3549 
+3802 @KoebesJakob Boise 20 3802 
+3847 @AnnasysDulain Boise 19 3847 
+4134 @Jbastianich: Los Angeles 14 4134 
+4200 @BriProv Nampa 730 4200 
+4201 @Bullseye: Nampa 407 4201 
+4214 @BrooklynMuseum's Los Angeles 20 4214 
+4259 @IamDeanTate: Boise 14 4259 
+4289 @EmilyGould Boise 334 4289 
+4304 @Mindshare Nampa 39 4304 
+4344 @BenJoBubble Nampa 120 4344 
+4378 @Verge: Nampa 407 4378 
+4433 @AndrewLauritzen Los Angeles 14 4433 
+4720 @BFigaro Boise 20 4720 
+4730 @MediaMolecule Boise 53 4730 
+4821 @DonNorbury Los Angeles 271 4821 
+4881 @ArtistVsPoet Boise 3099 4881 
+4895 @Disneyland Los Angeles 4874 4895 
+4910 @Geo_Antoinette Los Angeles 322 4910 
+4991 @JacobWysocki), Los Angeles 71 4991 
+5011 @ArmyROTC Nampa 20 5011 
+5193 @BenRT Los Angeles 20 5193 
+5232 @CrReaM: Nampa 20 5232 
+5245 @1stwebdesigner: Nampa 30 5245 
+5439 @CandisAshley Los Angeles 52 5439 
+5478 @Duchess_99 Nampa 20 5478 
+5792 @Kandi Nampa 351 5792 
+7274 @HarperCollins: Nampa 370 7274 
+7414 @AlecLongstreth: Boise 71 7414 
+7423 @BenFolds: Los Angeles 91 7423 
+7428 @CherrieT Los Angeles 145 7428 
+7437 @Elkoorps Boise 579 7437 
+7533 @FIRSTLEGOLeague Nampa 273 7533 
+7540 @JeremyDorgas Los Angeles 4397 7540 
+7551 @LGSTV Raleigh, NC 292 7551 
+7590 @13pt Los Angeles 3220 7590 
+7592 @AlexNoisy Nampa 2172 7592 
+7782 @Alexa_Chung, Nampa 342 7782 
+7783 @AlexanderWangNY Boise 407 7783 
+7932 @BlairHefty Los Angeles 14 7932 
+7937 @DVF, Nampa 400 7937 
+7942 @DalaiLama: Los Angeles 10 7942 
+8005 @FACTORYPR: Los Angeles 173 8005 
+8294 @HughMasekela Los Angeles 409 8294 
+8303 @Fem_G33k_08 Nampa 407 8303 
+8381 @JERSEYJOEISM Los Angeles 173 8381 
+8385 @JenBoydSD Nampa 173 8385 
+8391 @Katykeim Los Angeles 173 8391 
+8398 @27L Nampa 173 8398 
+8498 @BarkingCarnival: Boise 274 8498 
+8598 @Common__Threads Los Angeles 8589 8598 
+8711 @GolfChannel: Nampa 1833 8711 
+8732 @JensTimmermans Nampa 2813 8732 
+8898 @GamerIntel: Nampa 1013 8898 
+8942 @JenaNardella: Nampa 132 8942 
+9100 @Gamesradar Nampa 389 9100 
+9101 @GoatwhoreNOLA Boise 334 9101 
+9110 @Hatewear: Los Angeles 110 9110 
+9574 @BlitzComicGuy: Boise 20 9574 
+9702 @House_Next_Door Nampa 20 9702 
+9797 @TheUsedBlack Nampa 20 9797 
+9798 @ToneCartoons: Nampa 53 9798 
+9851 @Latzke: Boise 141 9851 
+9903 @Ayngelina Boise 20 9903 
+9914 @BruceMartin Boise 53 9914 
+9972 @CarloBrown Los Angeles 502 9972 
+9987 @DavidDiFranco: Nampa 83 9987 
+10128 @Malaria_Envoy Boise 407 10128 
+10152 @345triangle Los Angeles 88 10152 
+10445 @Eddie_Ruckus: Los Angeles 227 10445 
+10534 @CherylMorgan Boise 227 10534 
+10704 @EricaViscio: Boise 502 10704 
+10895 @AndrewClaudio Nampa 323 10895 
+11044 @SanjBBC Boise 352 11044 
+11170 @AdamPlotkin Los Angeles 323 11170 
+11444 @JasonGregor Los Angeles 211 11444 
+11711 @DBArgenis Boise 211 11711 
+11792 @METROPEORIA: Los Angeles 319 11792 
+11888 @Khaosgoblin Los Angeles 1098 11888 
+12005 @BeachBallComics Boise 88 12005 
+12270 @BEEFMagazine: Nampa 1159 12270 
+12281 @BrightEndeavors Los Angeles 2059 12281 
+12318 @DonnyO93 Los Angeles 2054 12318 
+12389 @DaenaTargaryen Nampa 944 12389 
+12748 @Mike_FTW Boise 323 12748 
+12755 @Gorskino10 Boise 52 12755 
+13134 @JordyTodosey Los Angeles 20 13134 
+13248 @1ET Nampa 439 13248 
+13894 @CityMinneapolis Nampa 227 13894 
+14025 @Spark7z Nampa 581 14025 
+14031 @CBoyardee Los Angeles 292 14031 
+14075 @GabrielMY Los Angeles 3292 14075 
+14549 @MLGTakeover Boise 1479 14549 
+14571 @MarthaRoby: Los Angeles 292 14571 
+14572 @Mista573: Los Angeles 4880 14572 
+14577 @BeingMama: Nampa 1833 14577 
+14584 @O2_Con Nampa 747 14584 
+14590 @805Living Boise 1737 14590 
+15113 @AdamantiumAC: Nampa 407 15113 
+15451 @DiabloOTR Boise 10 15451 
+19150 @bigthink] Los Angeles 4885 19150 
+19153 @cmwalla Nampa 1445 19153 
+19158 @djdan85: Nampa 4885 19158 
+19159 @eastdakota Los Angeles 514 19159 
+19870 @dustintoshiyuki Nampa 88 19870 
+19913 @miss_yolie Boise 230 19913 
+20920 @kylemeyer Los Angeles 1833 20920 
+22779 @SolidSnakeEFC Boise 319 22779 
+27004 @levidehaan Boise 4870 27004 
+28097 @dlwh Los Angeles 4874 28097 
+29233 @HisforHOYR Los Angeles 2915 29233 
+30230 @mrjudkins Boise 4897 30230 
+30231 @mruff221 Boise 3457 30231 
+30241 @nikkifinke Boise 4870 30241 
+31213 @geekyglamorous Nampa 4880 31213 
+31955 @MVPKeeN Boise 4875 31955 
+31957 @MVPNoblesse Los Angeles 4882 31957 
+34282 @dynamoe Los Angeles 4885 34282 
+34312 @intlCES Nampa 2885 34312 
+35481 @avleen Los Angeles 3431 35481 
+37532 @FakeCivilWar: Los Angeles 88 37532 

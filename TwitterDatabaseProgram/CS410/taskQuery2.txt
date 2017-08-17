@@ -1,0 +1,1 @@
+SELECT * FROM User as u, ReTweet as r WHERE u.id = r.user2 GROUP BY u.id ORDER BY COUNT(*) DESC LIMIT 1
