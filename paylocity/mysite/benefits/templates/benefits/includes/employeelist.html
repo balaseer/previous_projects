@@ -1,0 +1,32 @@
+
+{% block content %}
+{% if employee_list %}
+
+<table class="table table-hover">
+    <thead class="thead-dark">
+    <tr >
+        <th scope="col">employee i.d.</th>
+        <th scope="col">employee name</th>
+        <th scope="col">benefit cost</th>
+        <th scope="col">dependents</th>
+    </tr>
+    </thead>
+
+
+        {% for employee in employee_list %}
+
+        <tr>
+        <th scope="row" >{{ employee.id }}</th>
+        <td><a href="{% url 'benefits:detail' employee.id %}">{{ employee }}</a></td>
+        <td>{{ employee.benefit_cost }}</td>
+
+        <td>{{ employee.get_dependent_count }}</td>
+        </tr>
+        {% endfor %}
+
+
+</table>
+{% else %}
+<p>No employees are available.</p>
+{% endif %}
+{% endblock %}

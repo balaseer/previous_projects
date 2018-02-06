@@ -1,0 +1,35 @@
+{% extends "benefits/header.html" %}
+
+{% block content %}
+<div class="jumbotron">
+
+<h1> {{ employee }}'s Information</h1>
+    <br/>
+
+    <h5>ID: {{employee.id}}</h5>
+    <br/>
+    <h5>Salary: {{employee.annual_salary}}</h5>
+    <br/>
+    <h5>Annual Benefit Cost: {{employee.benefit_cost}}</h5>
+    <br/>
+    {% if employee.had_discount %}
+    <h5>Discount: 10%</h5>
+    <br/>
+    {% endif %}
+
+    <h5>Annual Salary After Deductions: {{employee.generate_salary_after_deductions}}</h5>
+    <br/>
+    <h5>Deductions Per Paycheck: {{ employee.generate_deductions_per_paycheck}}</h5>
+    <br/>
+    <h5>Paycheck Amount After Deductions: {{ employee.generate_each_paycheck_after_deductions }}</h5>
+    <br/>
+
+    <h5>Dependents:</h5>
+<ul>
+    {% for dependent in employee.dependents.all %}
+    <li> <h6>Name: {{ dependent }} <br/> Cost: {{ dependent.cost }} <br/> Type: {{ dependent.dependent_type }} <br/> </h6></li>
+{% endfor %}
+</ul>
+</div>
+
+{% endblock %}
